@@ -47,9 +47,7 @@ git log  查詢版本紀錄
 git rm <filename>  刪除檔案(包括實體及快取)
 git mv <file1> <file2>  把file1更名為file2
 ```
-參考資料
+### 參考資料
 https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/zh-tw/README.md
 https://gogojimmy.net/2012/01/17/how-to-use-git-1-git-basic/
 
-
-# postman 操作
