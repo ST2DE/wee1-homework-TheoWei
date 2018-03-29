@@ -47,9 +47,9 @@ git log --stat 【查看更詳細內容】
 當專案開發的時候，會遇到bug修正或是新功能測試的時候，這時就會從主branch分出一條新的branch，也因為這條新的branch會包含主branch所有最新的狀態，所以等問題解決之後，merge合併回主branch，便可以將新增的功能或是已經解決的bug，一併加入到主branch內
 ```
 git branch 【查詢目前所有的branch】
-git branch <想新增的branch name> 【新增branch】
+git branch <branch name> 【新增branch】
 (前面有*代表為目前所在的branch)
-
+git checkout <branch name> 【切換到指定的branch】
 ```
 
 
