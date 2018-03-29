@@ -7,7 +7,6 @@ Git 是一套分散式版本控制系統，比起中心化控制，Git讓軟體�
 2. 每個人都有一份repostiory 副本，提交版本變更到本地儲存庫，而且不需要網路
 3. git在弄版本控制時，權限唯一差別在於可以存取 upstream repository (上層) or remote repository(遠端)
 4. 合併多人版本，只要有共用儲存庫(shared repository)的權限或管道即可 ex:同server透過資料夾權限即可共用、SSH遠端另一台server的Git repository、web server共用git repository
-
 ---
 ## 實際操作
 
@@ -21,22 +20,34 @@ git init
 如果對某些開發者的專案感興趣，可以透過clone將他們的repository 下載到我們的資料夾內
 ```
 git clone <http://...address.git>
+```
 
+### 功能指令
+```
 git status 查看目前Git狀態 
 (如果出現Untracked file 代表檔案在過去的git repository 沒有這支檔案，所以未被追蹤)
 
-git add <filename> 追蹤檔案
-git add . 追蹤全部檔案
+git add <filename> 【追蹤檔案】
+git add . 【追蹤全部檔案】
 git add -i
 (已追蹤的檔案會出現change to be commit，此時狀態為stage，代表修改過，未修改是unstage)
 
-git commit -m "輸入這次紀錄內容"  提交節點
+git commit -m "輸入這次紀錄內容"  【提交節點】
 (一個commit在Git為一個節點，做為未來追蹤或回溯的參考，類似存檔概念)
-
-git commit -v 列出更動紀錄
+git commit -am "輸入紀錄內容" 【將曾修改過但未被add的檔案列入追蹤】
+git commit -v 【列出更動紀錄】
 (+代表新增部分 -代表刪除部分)
 
+git log 【查看過去commit紀錄】
+git log --stat 【查看更詳細內容】
+(順序為: commit版號 > commmit訊息 > 時間)
 ```
+---
+## Git branch 介紹
+當專案開發的時候，會遇到bug修正或是新功能測試的時候，這時就會從主branch分出一條新的branch，也因為這條新的branch會包含主branch所有最新的狀態，所以等問題解決之後，merge合併回主branch，便可以將新增的功能或是已經解決的bug，一併加入到主branch內
+
+
+
 
 ### 常用指令
 ```
