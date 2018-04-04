@@ -57,6 +57,7 @@ HTTP通訊協定 (HyperText Transfer Protocol) base on TCP傳輸協定的傳輸�
 | CONNECT | X | X | X | 建立 「藉由 **目標資源** 辨識的 Server」的 隧道 (tunnel)。 |
 | OPTIONS | O | O | X | 描述 **目標資源** 的 通訊選項。 |
 | TRACE | O | O | X | 沿著 **目標資源** 的 路徑 執行 訊息 loop-back 測試。 |
+
 (轉載自 https://notfalse.net/43/http-request-method)
 
 ### 常見STATUS: 
