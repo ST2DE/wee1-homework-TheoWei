@@ -7,8 +7,9 @@
 
 1. 輸入指定的URL
 2. 選擇HTTP Method
-4. 按下【SEND】會回傳內容 
-5. 下方就會產生內容
+3. 按下【SEND】會回傳內容 
+4. 下方就會產生內容
+----
 也可用於查看API的資料，輸入好URL按下URL param，可以顯示API設定的參數
 按下【SEND】，會收到SERVER回傳的資料內容
 按下【Params】，會顯示參數
@@ -16,12 +17,13 @@
 按下【PRIVIEW】，會顯示REQUEST CONTENT
 【PRETTY】為易讀 【RAW】為原始資料
 
-### HTTP 有幾種方法: 
-GET = 從SERVER取得資料
-POST = 新增資料(新增全新的資料，無論是否相同)
-PUT = 在指定位置的新增資料(相同資料會被覆蓋)
-PATCH = 在現有資料欄位，增加OR更新一筆資料(就是修改已存在的資料)
-DELETE 刪除資料
+### 常見 HTTP Method
+
+* GET = 從SERVER取得資料
+* POST = 新增資料(新增全新的資料，無論是否相同)
+* PUT = 在指定位置的新增資料(相同資料會被覆蓋)
+* PATCH = 在現有資料欄位，增加OR更新一筆資料(就是修改已存在的資料)
+* DELETE 刪除資料
 
 ### safe & idempotent 
 為HTTP狀態描述的專有名詞
@@ -44,7 +46,7 @@ Content-Length 內容長度
 Content-Encoding 內容編碼方式or壓縮格式
 Authorization 認證資料
 
-### 常用HTTP Method: 
+### HTTP Method: 
 | 請求方法 | 安全性 | 冪等性 | 可快取性 | 描述 |
 | --- | --- | --- | --- | --- |
 | GET | O | O | O | 傳輸 **目標資源** 目前的 表示 (representation)。 |
