@@ -40,11 +40,11 @@ ex: 刪除一筆資料
 ## HTTP 協議
 HTTP通訊協定 (HyperText Transfer Protocol) base on TCP傳輸協定的傳輸機制，可以確保傳輸過程Package不會遺失，接收及傳送順序一致
 
-Header
-Content-Type 內容格式
-Content-Length 內容長度
-Content-Encoding 內容編碼方式or壓縮格式
-Authorization 認證資料
+### Header
+* Content-Type 內容格式
+* Content-Length 內容長度
+* Content-Encoding 內容編碼方式or壓縮格式
+* Authorization 認證資料
 
 ### HTTP Method: 
 | 請求方法 | 安全性 | 冪等性 | 可快取性 | 描述 |
