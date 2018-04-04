@@ -9,13 +9,13 @@
 2. 選擇HTTP Method
 3. 按下【SEND】會回傳內容 
 4. 下方就會產生內容
-----
-也可用於查看API的資料，輸入好URL按下URL param，可以顯示API設定的參數
-按下【SEND】，會收到SERVER回傳的資料內容
-按下【Params】，會顯示參數
-按下【Header】，可以查看資料資訊
-按下【PRIVIEW】，會顯示REQUEST CONTENT
-【PRETTY】為易讀 【RAW】為原始資料
+
+###### 也可用於查看API的資料，輸入好URL按下URL param，可以顯示API設定的參數
+* 按下【SEND】，會收到SERVER回傳的資料內容
+* 按下【Params】，會顯示參數
+* 按下【Header】，可以查看資料資訊
+* 按下【PRIVIEW】，會顯示REQUEST CONTENT
+* 【PRETTY】為易讀 【RAW】為原始資料
 
 ### 常見 HTTP Method
 
