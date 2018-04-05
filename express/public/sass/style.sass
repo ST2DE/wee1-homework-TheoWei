@@ -1,0 +1,140 @@
+*
+  font-family: 'Source Sans Pro'
+  
+  position: relative
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro')
+// ----------------------------------------
+$colorBlue: #00204A
+$colorWhite: #f3f3f3
+$colorRed: #ff3b30
+$colorYellow: #ffcc00
+$colorGreen: #4cd964
+
+
+
+=flexCenter
+  display: flex
+  justify-content: center
+  align-items: center
+
+=btn($t,$r,$c)
+  width: 15px
+  height: 15px
+  position: absolute
+  border-radius: 50%
+  background-color: $c
+  top: $t
+  right: $r
+  
+=size($w,$h:$w)
+  width: $w
+  height: $h
+  
+// ----------------------------------------
+
+html,body
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+  background-image: linear-gradient(45deg, #a6c0fe 0%, #f68084 100%)
+  +flexCenter
+
+.board
+  width: 60%
+  max-width: 550px
+  +flexCenter
+  flex-direction: column
+  
+  background-color: $colorWhite
+  color: black
+  border-radius: 10px
+  box-shadow: 0px 0px 30px rgba(black,0.6)
+  transition: 0.5s
+  overflow: hidden
+  opacity: 0
+
+  &:hover
+    box-shadow: 0px 5px 40px rgba(black,0.5)
+    .bottom
+      height: 160px
+      .comment
+        opacity: 1
+  .btn
+    +btn(0px,0px,$colorGreen)
+    margin: 5px 10px
+    &:before
+      content: ""
+      +btn(0px,20px,$colorYellow)
+    &:after
+      content: ""
+      +btn(0px,40px,$colorRed)
+
+  .img
+    width: 250px
+    height: 250px
+    border-radius: 50px
+    margin-top: 30px
+    overflow: hidden
+
+    .person
+      object-fit: cover
+      object-position: center
+      height: 100%
+
+  .info
+    margin-top: 10px
+    ul
+      list-style: none
+      margin: 10px
+      padding: 0px
+      
+      li
+        padding: 5px
+        left: 0px
+        font-weight: 800
+        &:before
+          content: ""
+          display: inline-block
+          margin-right: 5px
+          width: 3px
+          height: 15px
+          background-color: red
+  .bottom
+    height: 10px
+    transition: 1s
+    display: inline-block
+    background-color: $colorBlue
+    .comment
+      color: $colorWhite
+      font-weight: 800
+      padding: 10px 50px
+      letter-spacing: 2px
+      transition: 1s
+      opacity: 0
+      
+.pageLoading
+  position: fixed
+  +size(100%)
+  background-image: linear-gradient(45deg, #a6c0fe 0%, #f68084 100%)
+  left: 0
+  top: 0
+  +flexCenter
+  flex-direction: column
+  transition: 1s
+  transition-delay: 0.5s
+  .loading
+    +size(200px,8px)
+    background: $colorWhite
+    margin-top: 80px
+    border-radius: 5px
+    overflow: hidden
+    .bar
+      background-color: $colorBlue
+      +size(0%,100%)
+  
+          
+        
+        
+    
+    
