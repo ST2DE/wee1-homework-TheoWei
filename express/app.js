@@ -12,9 +12,10 @@ app.get('/about_me',function(req,res){
   res.render('index');
 })
 
-app.get('/about_me/:name',function(req,res){
-  var guest = req.params.name;
-  res.render('index2',{'name':guest});
+app.get('/about_me/',function(req,res){
+  
+  var name = req.query.name;
+  res.render('index2',{'name':name});
 })
 
 
